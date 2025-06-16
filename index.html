@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karolina Łapińska</title>
+    <style>
+       *{
+        margin:0;
+        box-sizing:border-box;
+       }
+       body{
+        background-color:antiquewhite;
+       }
+        .head{
+            position:relative;
+            width:100%;
+            height: 95vh;
+            overflow: hidden;
+        }
+        .head video{
+            position:absolute;
+            z-index:-1;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            opacity:0.6;
+        }
+        .head h1{
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size:7rem;
+            z-index: 0;
+            color: whitesmoke;
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  
+        }
+        nav{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:antiquewhite;
+            width:100%;
+            height:3rem;
+            text-align:center;
+            
+            
+        }
+        nav a{
+            font-size:2rem;
+            margin:0 1.2rem;
+            font-weight:bold;
+            text-decoration:none;    
+        }
+        nav a:link{
+            color: rgb(0, 0, 0);  
+        }
+        nav a:visited{
+            color: rgb(0, 0, 0);  
+        }
+
+        nav a:hover{
+            color:rgb(0, 0, 0);
+            text-decoration:underline;
+            
+        }
+        nav a:active{
+            color: rgb(0, 0, 0);  
+        }
+        main{
+            position:relative;
+            display:flex;
+            margin: 0 auto;
+            width:90%;
+            border: 2px solid rgb(236, 222, 204);
+            align-items:center;
+            justify-content:center;
+            background-color:rgb(255, 255, 255);
+            
+        }
+        .content{
+            
+            display:flex;
+            align-items: flex-start;
+            font-size:2rem;
+            
+            /*flex-wrap:wrap;  wersja mobilna*/
+           /* border: 2px solid red;*/
+        }
+        .content img{
+            max-width: 15rem;
+            height: auto;
+            height:auto;
+            border-radius:1rem;
+            margin:0.4rem 1rem 1rem 0.8rem;
+           /* border: 2px solid red;*/
+        }
+        .content article{
+            
+        
+        }
+        .experiance{
+          position: relative;
+          width:90%;
+          display:flex;
+          margin: 0 auto;
+          border: 2px solid rgb(236, 222, 204);
+          align-items:center;
+          justify-content:center;
+          background-color:rgb(255, 255, 255);
+        }
+        .movie{
+         display:flex;
+         align-items:flex-start;
+        }
+        .movie video{
+          max-height:28rem;
+          border-radius:1rem;
+          margin:0.4rem 1rem 1rem 0.8rem
+        }
+        .movie article{
+           display:flex;
+            align-items: flex-start;
+            font-size:2rem;
+            ;
+            
+        }
+        .contakt{
+          position:relative;
+          width:90%;
+          
+        }
+        .contact div{
+         width:300px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="head">
+        <video autoplay muted loop playsinline>
+            <source src="video/hends2.mp4" type="video/mp4"/>
+        </video>
+        <h1>Rzeczowa Kadrowa</h1>
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">O mnie</a>
+        <a href="#">Doświadczenie</a>
+        <a href="#">Kontakt</a>
+    </nav>
+    <main>
+    <div class="content">
+        <img src="foto/3-1.jpg" type="foto/jpeg">
+        <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quam at molestias ex eius error, consectetur provident sint sed ipsum ut eum, dignissimos deserunt aliquid modi sequi quisquam incidunt est officia doloribus, quidem blanditiis id! Dolor id soluta maxime tempore ipsam deserunt ex, eligendi explicabo illum eaque quidem odit a reiciendis? Corporis eaque numquam alias deserunt vel molestiae ullam optio, eligendi obcaecati dolorem rem error, accusantium deleniti impedit totam praesentium autem quod sint in perferendis? Totam similique ipsum debitis? Quia recusandae eligendi modi fuga quis veniam iusto voluptates dicta ex aliquid eius repellendus, nulla ea asperiores odit voluptate nostrum. Necessitatibus, quae velit dolorum hic sed, harum exercitationem explicabo quidem possimus itaque, eveniet accusamus veritatis illum labore molestiae vitae cupiditate eos.
+        </article>
+    </div>
+    </main>
+    <section class="experiance">
+      <div class="movie">
+        <video autoplay loop muted playsiline>
+          <source src="video/7710691-uhd_2160_4096_25fps.mp4" type="video/mp4">
+        </video>
+        <article>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem qui minus cupiditate nobis expedita recusandae excepturi reprehenderit ab libero corrupti vitae commodi asperiores neque, fugit unde mollitia labore. Tempora quisquam aspernatur .
+        </article>
+      </div>
+    </section>
+    <section class="contact">
+      <div>
+        <h2>Kontakt</h2>
+      </div>
+    </section>
+</body>
+</html>
