@@ -8,10 +8,6 @@
         *{
             margin:0;
         }
-        html{
-          scroll-behavior:smooth;
-          scroll-padding-top:90px;
-        }
         .head{
             position:relative;
             width:100%;
@@ -37,24 +33,19 @@
            text-shadow: 6px 1px 4px black;
            white-space: nowrap;
         }
-        nav{
-          position:sticky;
-          top: 0;
-          z-index:2;
-        }
         .navigation{
             display:flex;
             justify-content: center;
             background-color:bisque;
             z-index:1;
-            min-height:2.5rem;
+            opacity:60%;
             border: 2px solid black;
         }
         .navigation a{
             text-decoration: none; 
             font-size: 2rem;
             margin:0 40px;
-            
+            font-weight:bold;
         }
         .navigation a:link{
             color:black;            
@@ -64,9 +55,7 @@
         }
         .navigation a:hover{
              color:rgb(39, 39, 39);
-             text-decoration: underline;
-             font-size: 2.1rem;
-             font-weight:bold;
+             
         }
         .navigation a:active{
              color:black;
@@ -112,125 +101,95 @@
             font-size:1.7rem;
             
         }
+        div.topper{
+            position:absolute;
+            min-width:3rem;
+            height:1rem;
+            margin-top:-40px;
+            font-size:3rem;
+            background-color: rgba(255, 228, 196, 0.6);
+            border:2px solid red;
+
+        }
+        .container{
+            width:120vh;
+            height:240px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+          
+        }
+        .container div{
+            display:flex;
+            margin:10px;
+            width:200px;
+            height:200px;
+            background-color:bisque;
+            padding:0;
+            justify-content: center;
+            align-items: center;
+            border-radius:1rem;
+            border:5px solid black;
+            box-sizing: border-box;
+            
+            
+        }
        
-      .contact{
-      
-        /*border:2px solid red;*/
-        display:flex;
-        flex-direction:column;
-        
-        
-      }
-      .contact div{
-        display:flex;
-        justify-content:flex-start;
-        align-items: flex-start;
-        width:auto;
-        height:60px;
-        margin: 20px;
-       
-        
-      }
-      .contact a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        text-decoration:none;
-        color:black;
-      }
-      .contact a:link{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        text-decoration:none;
-        color:black;
-      }
-      .contact a:visited{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        text-decoration:none;
-        color:black;
-      }
-      .contact a:hover{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2.1rem;
-        text-decoration:none;
-        color:black;
-        text-decoration: underline;
-        background-color:bisque;
-        border-radius:2rem;
-      }
-      .contact a:active{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        text-decoration:none;
-        color:black;
-      }
-      .contact img{
-        width: 60px;
-        height:auto;
-      }
+        .container img{
+          width: 180px;;
+          height: 180px;;
+          display:block;
+          margin:auto;
+        }
       
     </style>
 </head>
 <body>
     <header>
-      <section id="home">
         <div class="head">
             <video autoplay loop muted>
                 <source src="video/hends2.mp4" type="video/mp4">
             </video>
             <h1>Rzeczowa Kadrowa</h1>
         </div>
-        </section>
-    </header> 
+    </header>
     <nav>
         <div class="navigation">
-            <a href="#home">Home</a>
-            <a href="#aboutme">O mnie</a>
-            <a href="#job">Usługi</a>
-            <a href="#contact">Kontakt</a>
+            <a href="#">O mnie</a>
+            <a href="#">Usługi</a>
+            <a href="#">Kontakt</a>
         </div>
     </nav>
     <main>
-      <section id="aboutme">
         <div class="content">
                       
-            <img src="foto/3-4.jpg">
+            <img src="foto/3-1.jpg">
             <div class="title"> O mnie </div> 
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore in reprehenderit laboriosam, dolorum est explicabo ea. Possimus quam quia atque provident, ratione beatae perferendis veritatis accusantium, vel at earum sequi doloremque quod, ducimus harum perspiciatis adipisci qui deleniti maxime quae nobis accusamus. Eos recusandae enim deserunt odit reiciendis culpa, deleniti natus in architecto, temporibus expedita eum veritatis at incidunt ullam dignissimos magnam molestias, praesentium itaque consectetur veniam voluptas. Exercitationem saepe eius sequi ea quidem voluptatum aliquid? Ipsum perferendis autem explicabo fugit iusto, qui tempore numquam, nihil ipsa a ad, ullam facere eius perspiciatis! Exercitationem eius deleniti quaerat sunt mollitia aspernatur harum facere assumenda sequi expedita temporibus debitis, dicta cupiditate impedit quidem voluptatibus non at, quod id quo? Repudiandae, et ducimus?</p>
         </div>
-        </section>
     </main>
     <main>
-      <section id="job">
         <div class="content">
             <img src="icons/suitcase.png">
             <div class="title"> Usługi </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, blanditiis eos. Praesentium assumenda laboriosam voluptas eveniet. Voluptate quibusdam consectetur eaque cum porro blanditiis voluptatibus minima perspiciatis distinctio ipsum. Neque pariatur rerum laudantium aliquam corporis sint beatae ipsa temporibus id, veniam incidunt nam impedit repellendus iste alias animi nulla. Aut cumque quisquam praesentium, amet molestias officia impedit suscipit. Doloremque aspernatur sapiente dolor repudiandae, quos dicta natus quidem ullam, nam, vitae ab qui tenetur quibusdam rem amet soluta rerum molestiae pariatur illum!</p>
+
         </div>
-        </section>
     </main>
     <main>
-      <section id="contact">
         <div class="content">
             <img src="icons/communicate.png">
             <div class="title"> Kontakt </div>
-            <div class="contact">
-              <div><a href="https://www.facebook.com/rzeczowakadrowa/" target="_blank"><img src="icons/facebook.png">Rzeczowa Kadrowa Facebook </a></div>
-              <div><a href="mailto:rzeczowakadrowa@gmail.com"><img src="icons/email.png">Adres e-mail: rzeczowakadrowa@gmail.com </a></div>
-              <div><a href="tel:+48793107363"><img src="icons/phone.png">Telefon: +48 793 107 363 </a></div> 
-            </div>    
+              <div class="container">
+                <a href="#"><div><img src="icons/facebook.png"></div></a>
+                <a href="#"><div><img src="icons/email.png"></div></a>
+                <a href="#"><div><img src="icons/phone.png"></div></a>
+              
+              </div>
+            
         </div>
-        </section>
     </main>
 
 </body>
